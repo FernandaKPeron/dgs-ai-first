@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "fs-code": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/fernanda.peron/Documents/repositories/dgs-ai-first/src",
+        "/Users/fernanda.peron/Documents/repositories/dgs-ai-first/specs",
+        "/Users/fernanda.peron/Documents/repositories/dgs-ai-first/skills"
+      ]
+    },
+    "fs-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/fernanda.peron/Documents/repositories/dgs-ai-first/docs/novatech",
+        "/Users/fernanda.peron/Documents/repositories/dgs-ai-first/data/retrieval-corpus"
+      ]
+    },
+    "git": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-git",
+        "--repository",
+        "/Users/fernanda.peron/Documents/repositories/dgs-ai-first"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {
+        "MEMORY_FILE_PATH": "/Users/fernanda.peron/Documents/repositories/dgs-ai-first/.mcp/memory/novatech-memory.json"
+      }
+    },
+    "everything": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything"]
+    }
+  }
+}
