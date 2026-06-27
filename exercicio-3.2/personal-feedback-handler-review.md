@@ -1,0 +1,5 @@
+1. L6 - Uso de "as any". Se o tipo é conhecido, deve criar uma tipagem correta. Deve usar o ZOD pra validar o input. (bug potencial e violação do agents.md)
+2. L16 - Uso de console.log pra logging. Deve usar Pino (violação agents.md)
+3. L16 - Logando o objeto inteiro de feedback contendo dados sensíveis (e-mail). Deve logar somente os dados necessários. (problema de segurança)
+4. L18 - Uso de require. Deve usar import estático no topo (violação agents.md)
+5. Sem tratamento de erros. (bug potencial)
